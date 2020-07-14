@@ -1,0 +1,50 @@
+﻿@model WebAppMvc2.Models.Produit
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Produit</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Reference)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reference)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.imageUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.imageUrl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.prix)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.prix)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
